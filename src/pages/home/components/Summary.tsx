@@ -7,6 +7,7 @@ const Summary = () => {
     <ProCard gutter={12} ghost>
       {getTotalStatisticsFrom(websiteMetrics.data).map((statistic) => (
         <StatisticCard
+          key={statistic.title}
           bordered
           hoverable
           colSpan={6}

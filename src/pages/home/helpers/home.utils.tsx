@@ -4,17 +4,26 @@ import {
   ProjectOutlined,
   UserSwitchOutlined,
 } from "@ant-design/icons";
-import {
-  MetricCalculatedKeyType,
-  MetricKeyType,
-  MetricsDataType,
-} from "types/metrics.type";
+import { MetricCalculatedKeyType, MetricsDataType } from "types/metrics.type";
 
+/**
+ * Get total metrics for a certain key.
+ *
+ * @param metrics records to use.
+ * @param metricKey record key to calculate total for.
+ * @returns total metric in records.
+ */
 export const getTotalMetricPropertyFrom = (
   metrics: MetricsDataType[],
   metricKey: MetricCalculatedKeyType
 ) => metrics.reduce((acc, item) => acc + item[metricKey], 0);
 
+/**
+ * Transform metrics to statistic data used in StatisticCard.
+ *
+ * @param metrics records to convert.
+ * @returns statistic card data.
+ */
 export const getTotalStatisticsFrom = (metrics: MetricsDataType[]) => [
   {
     title: "Total Impressions",

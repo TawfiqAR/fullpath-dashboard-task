@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PageContainer, ProConfigProvider } from "@ant-design/pro-components";
+import { PageContainer } from "@ant-design/pro-components";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import websiteMetrics from "mocks/sample.json";
 import { AreaChartOutlined } from "@ant-design/icons";

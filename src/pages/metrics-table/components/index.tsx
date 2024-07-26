@@ -1,8 +1,4 @@
-import {
-  LightFilter,
-  ProFormDatePicker,
-  ProTable,
-} from "@ant-design/pro-components";
+import { ProTable } from "@ant-design/pro-components";
 import { MetricsDataType } from "types/metrics.type";
 import { metricsTableColumns } from "../helpers/metricsTable.config";
 import websiteMetrics from "mocks/sample.json";
